@@ -12,16 +12,24 @@
 		2F0C28BE1FB048C60094072C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C28BC1FB048C60094072C /* Main.storyboard */; };
 		2F0C28C01FB048C60094072C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C28BF1FB048C60094072C /* Assets.xcassets */; };
 		2F0C28C31FB048C60094072C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C28C11FB048C60094072C /* LaunchScreen.storyboard */; };
+		2F0C28CC1FB04C520094072C /* Stateful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C28CB1FB04C520094072C /* Stateful.swift */; };
+		2F0C28CE1FB07B7B0094072C /* EmptyTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C28CD1FB07B7B0094072C /* EmptyTest.xib */; };
+		2F0C28D01FB082250094072C /* LoadingTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C28CF1FB082250094072C /* LoadingTest.xib */; };
+		2F0C28D21FB083730094072C /* ErrorTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0C28D11FB083730094072C /* ErrorTest.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F0C28B51FB048C60094072C /* Statful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Statful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0C28B51FB048C60094072C /* Stateful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stateful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0C28B81FB048C60094072C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F0C28BA1FB048C60094072C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F0C28BD1FB048C60094072C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F0C28BF1FB048C60094072C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0C28C21FB048C60094072C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0C28C41FB048C60094072C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0C28CB1FB04C520094072C /* Stateful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stateful.swift; sourceTree = "<group>"; };
+		2F0C28CD1FB07B7B0094072C /* EmptyTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTest.xib; sourceTree = "<group>"; };
+		2F0C28CF1FB082250094072C /* LoadingTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingTest.xib; sourceTree = "<group>"; };
+		2F0C28D11FB083730094072C /* ErrorTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorTest.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		2F0C28AC1FB048C60094072C = {
 			isa = PBXGroup;
 			children = (
-				2F0C28B71FB048C60094072C /* Statful */,
+				2F0C28B71FB048C60094072C /* Stateful */,
 				2F0C28B61FB048C60094072C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +54,43 @@
 		2F0C28B61FB048C60094072C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F0C28B51FB048C60094072C /* Statful.app */,
+				2F0C28B51FB048C60094072C /* Stateful.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F0C28B71FB048C60094072C /* Statful */ = {
+		2F0C28B71FB048C60094072C /* Stateful */ = {
 			isa = PBXGroup;
 			children = (
+				2F0C28CA1FB048CF0094072C /* Stateful */,
 				2F0C28B81FB048C60094072C /* AppDelegate.swift */,
 				2F0C28BA1FB048C60094072C /* ViewController.swift */,
 				2F0C28BC1FB048C60094072C /* Main.storyboard */,
 				2F0C28BF1FB048C60094072C /* Assets.xcassets */,
 				2F0C28C11FB048C60094072C /* LaunchScreen.storyboard */,
 				2F0C28C41FB048C60094072C /* Info.plist */,
+				2F0C28CD1FB07B7B0094072C /* EmptyTest.xib */,
+				2F0C28CF1FB082250094072C /* LoadingTest.xib */,
+				2F0C28D11FB083730094072C /* ErrorTest.xib */,
 			);
+			name = Stateful;
 			path = Statful;
+			sourceTree = "<group>";
+		};
+		2F0C28CA1FB048CF0094072C /* Stateful */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C28CB1FB04C520094072C /* Stateful.swift */,
+			);
+			name = Stateful;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F0C28B41FB048C60094072C /* Statful */ = {
+		2F0C28B41FB048C60094072C /* Stateful */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F0C28C71FB048C60094072C /* Build configuration list for PBXNativeTarget "Statful" */;
+			buildConfigurationList = 2F0C28C71FB048C60094072C /* Build configuration list for PBXNativeTarget "Stateful" */;
 			buildPhases = (
 				2F0C28B11FB048C60094072C /* Sources */,
 				2F0C28B21FB048C60094072C /* Frameworks */,
@@ -79,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = Statful;
+			name = Stateful;
 			productName = Statful;
-			productReference = 2F0C28B51FB048C60094072C /* Statful.app */;
+			productReference = 2F0C28B51FB048C60094072C /* Stateful.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F0C28B01FB048C60094072C /* Build configuration list for PBXProject "Statful" */;
+			buildConfigurationList = 2F0C28B01FB048C60094072C /* Build configuration list for PBXProject "Stateful" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F0C28B41FB048C60094072C /* Statful */,
+				2F0C28B41FB048C60094072C /* Stateful */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0C28CE1FB07B7B0094072C /* EmptyTest.xib in Resources */,
+				2F0C28D01FB082250094072C /* LoadingTest.xib in Resources */,
+				2F0C28D21FB083730094072C /* ErrorTest.xib in Resources */,
 				2F0C28C31FB048C60094072C /* LaunchScreen.storyboard in Resources */,
 				2F0C28C01FB048C60094072C /* Assets.xcassets in Resources */,
 				2F0C28BE1FB048C60094072C /* Main.storyboard in Resources */,
@@ -138,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F0C28BB1FB048C60094072C /* ViewController.swift in Sources */,
+				2F0C28CC1FB04C520094072C /* Stateful.swift in Sources */,
 				2F0C28B91FB048C60094072C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F0C28B01FB048C60094072C /* Build configuration list for PBXProject "Statful" */ = {
+		2F0C28B01FB048C60094072C /* Build configuration list for PBXProject "Stateful" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F0C28C51FB048C60094072C /* Debug */,
@@ -295,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F0C28C71FB048C60094072C /* Build configuration list for PBXNativeTarget "Statful" */ = {
+		2F0C28C71FB048C60094072C /* Build configuration list for PBXNativeTarget "Stateful" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F0C28C81FB048C60094072C /* Debug */,
